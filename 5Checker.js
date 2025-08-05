@@ -1,5 +1,5 @@
 const age = 18;
-const nation = true;
+const nation = false;
 
 if (age >= 18) {
   if (nation) {
