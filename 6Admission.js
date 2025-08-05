@@ -1,6 +1,6 @@
-const math = 100;
-const science = 90;
-const english = 80;
+const math = 40;
+const science = 40;
+const english = 40;
 
 let avg = (math + science + english) / 3;
 
@@ -13,8 +13,14 @@ if (
   english < 0
 ) {
   console.log("Invalid mark");
-} else if (math >= 40 && science >= 40 && english >= 40 && avg >= 60) {
-  console.log("Eligible for admission");
 } else {
-  console.log("Not eligible for admission");
+  if (math >= 40 && science >= 40 && english >= 40) {
+    if (avg >= 60) {
+      console.log("eligible for admission");
+    } else {
+      console.log("not eligible for admission");
+    }
+  } else {
+    console.log("not eligible for admission");
+  }
 }
